@@ -1,0 +1,587 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background: #2c3e50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: yellowgreen;
+}
+
+/* Main content */
+.main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+
+/* Topbar */
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background:#34495e;
+    padding: 0px;
+    border-radius: 10px;
+}
+.navbuttons{
+
+    width: 80%;
+    height:0 px ;
+    justify-content: space-between;
+    background-color: #34495e;
+    
+
+}
+ul {
+    
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+  font-size: larger;
+}
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li a:hover {
+  background-color: yellowgreen;
+  border-radius: 8px;
+}
+.userprofile{
+
+margin-top: 20px;
+margin-right: 5px;
+
+
+}
+.userprofile a{
+    color: white;
+    text-decoration:  none;
+    font-size: large;
+    justify-content: center;
+
+
+}
+.userprofile :hover{
+    background-color: yellowgreen;
+      border-radius: 8px;
+
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.pagination-projects{
+    width: 25%;
+    display: flex;
+ justify-content: center;
+ margin-left: 290px;
+
+    
+}
+
+
+
+
+.projectstable{
+    margin-top: 0px;
+    width: 100%;
+    margin-left: 245px;
+
+}
+.projectstable table{
+
+    color:  white;
+    width: 80%;
+}
+.projectstable table td:first-child{
+    text-align: center;
+
+}
+
+.pages{
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #34495e;
+    color: black;
+}
+.pagination{
+    width: 30%;
+    margin-left:350px;
+    color: white;
+
+
+}
+.navigation{
+    background-color:#34495e;
+    margin-top: 10px;
+    color: white;
+
+
+}
+.search_users_form{
+    width: 120%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.search_users_form form{
+    width:50%;
+}
+.search_users_form a{
+    width: 90px;
+margin-right: 40px;
+}
+
+
+.assigned_tasks_table{
+    width: 80%;
+    
+}
+.assigned_tasks_table table{
+    width: 100%;
+    height: 400px;
+    color: white;
+    background-color: #34495e;
+    margin-left: 70px;
+}
+.tasks_main{
+margin-left: 220px;
+    padding: 20px;    
+
+}
+.report_main{
+    margin-left: 220px;
+    padding: 20px;
+    
+
+}
+.pending_task{
+    width: 70%;
+    background-color:white;
+    margin-left :80px;
+}
+.pending_task table {
+    width:  100%;
+    color: white;
+    background-color: #34495e;
+    
+}
+.pending_task table td{
+    color: white;
+}
+.completed_tasks{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.login_container{
+    display: flex;
+    justify-content: center;
+    background-image: url(img2.jpg);
+    color: white;
+    height: 630px;
+}
+.main_login{
+    margin-top: 30px;
+    width: 30%;
+
+}
+
+.login_form{
+    width:80% ;
+    height:250px ;
+    justify-content: center;
+    display: flex;
+
+    color: white;
+    font-size:45px
+}
+.login_form label{
+    font-size: x-large;
+}
+.main_login h1{
+
+
+    margin-left: 90px;
+    margin-bottom: 30px;
+
+}
+.login_form a{
+
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+    background-color: rgb(33, 83, 33);
+}
+.container_signup{
+    width: 100%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    background-image: url(img2.jpg);
+}
+
+.signup_main h1{
+    color: white;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.form_signup{
+    width:80% ;
+    height:250px ;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size:25px
+}
+.form_signup a{
+    border:  1px solid gray;
+    color: black;
+    background-color:  white;
+    text-decoration: none;
+    font-size: large;
+    margin-left: 60px;
+
+}
+.project_form_container{
+    display: flex;
+    justify-content: center;
+    background-image: url(img2.jpg);
+    color: white;
+    height: 630px;
+}
+textarea {
+resize: none;
+}
+.proj_form_main{
+margin-top: 30px;
+    width: 30%;
+
+}
+.proj_form_main h1{
+
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+.searchbox{
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 130px;
+
+
+}
+.searchbox button{
+margin-left: 550px;
+}
+.small_container{
+    width: 95%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.small_container form{
+    width:50%;
+}
+.proj_form_main button{
+    margin-top: 20px;
+    margin-left: 270px;
+}
+.edit_form_container{
+    display: flex;
+    justify-content: center;
+    background-image: url(img2.jpg);
+    color: white;
+    height: 630px;
+
+}
+.edit_form_main{
+    margin-top: 30px;
+    width: 30%;
+
+}
+.edit_form_main  h1{
+    margin-left: 55px;
+    margin-bottom: 20px;
+}
+.edit_form_main button{
+    margin-top: 0px;
+    margin-left: 270px;
+
+}
+.assign_task_button{
+    height: 40px;
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: space-around;
+}
+.assign_task_button h1{
+    margin-right: 550px;
+}
+.tasks_form_container{
+
+    display: flex;
+    justify-content: center;
+    background-image: url(img2.jpg);
+    color: white;
+    height: 630px;
+}
+.tasks_form_main{
+    margin-top: 30px;
+    width: 30%;
+
+}
+.tasks_form button{
+    height: 40px;
+    width: 110px;
+    margin-left: 330px;
+    margin-top: 80px;
+}
+.users_main_container{
+    display: flex;
+    width: 65%;
+   margin-left: 270px;
+    align-items: center;
+
+}
+.main_users{
+    width: 100%;
+    align-items: center;
+
+
+}
+
+.main_users table{
+    width: 115%;
+
+
+}
+
+.mt-3{
+    text-align: center;
+    width: 100%;
+
+}
+.user_subbox1{
+    display: flex;
+    justify-content: space-between;
+    width: 115%;
+
+}
+.user_subbox1 a{
+    margin-top: 20px;
+}
+
+.main_addusers{
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50;
+    color: white;
+    height: 669px;
+}
+.mt-5{
+    background-color: #2c3e50;
+    width: 50%;
+    justify-content: center;
+
+}
+.mt-5 input {
+    margin-left: 180px;
+    margin-top: 0px;
+    width: 200px;
+}
+.mt-5 label{
+    margin-left: 160px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+.mt-5 select {
+    margin-left: 180px;
+    margin-top: 10px;
+    width: 200px;
+
+}
+.mt-5 h2{
+    text-align: center  ;
+}
+/* .mt-5 button {
+    margin-top: 20px;
+    margin-left: 390px;
+} */
+.main_board{
+    margin-left: 200px;
+}
+.mb-3{
+    width: 100%;
+    margin-left:100px ;
+    margin-top: 20px;
+}
+.useredit_main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 630px;
+    color: white;
+    background-image: url(img2.jpg);
+    padding: 10px;
+    
+}
+.edituser_form{
+    margin-top: 100px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+.edituser_form label {
+    margin-right: 350px;
+font-size: x-large;
+
+padding: 20px;
+
+}
+.edituser_form input{
+    margin-left: 100px;
+}
+.edituser_form button{
+margin-top:20px;    
+
+}
+.edituser_form select{
+    margin-left: 200px;
+}
+.project_detail_main{  
+    width: 70%;
+    height: 630px;
+    margin-left: 300px;
+    
+
+}
+.details_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+
+}
+
+.tasks_form_container{
+    height: 640px;
+}
+.Assign_tasks_form button {
+
+    margin-bottom: 30px;
+    margin-left: 270px;
+
+}
+body{
+    background:#f5f5f5;
+}
+
+.main_single_user{
+    min-height:100vh;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 20px;
+    background-image: url(img2.jpg);
+}
+
+.assign-form{
+    width:50%;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+}
+.assign-form input{
+    width: 300px;
+}
+.assign-form select{
+    width: 300px;
+}
+.assign-form button{
+    margin-left: 290px;
+}
+.project_task_main {
+    margin-left: 220px;
+    padding: 20px;
+    height: 650px;
+}
+.project_tasks_subbox{
+
+display: flex;
+justify-content: space-between;
+
+}
+.task_table_main{
+ width: 80%;
+margin-left: 0px;
+padding: 20px;
+
+}
+.tasks_list_bar{
+
+width: 50%;
+margin-left: 130px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
