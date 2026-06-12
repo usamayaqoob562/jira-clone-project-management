@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,4 +35,42 @@
 </form>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_form.html</title>
+    
+</head>
+<body>
+    <form method="POST" action="tasks_form.php">
+        <label for="task-name">task name</label>
+
+    <input type="text" name="task_name" placeholder="Task Name" required><br><br>
+
+    <select name="assin_to" required>
+        <option value="">Select User</option>
+        
+        <?php
+        include 'conn.php';
+        $users = $conn->query("SELECT * FROM users");
+
+        while ($row = $users->fetch_assoc()) {
+            echo "<option value='{$row['user_id']}'>{$row['user_name']}</option>";
+        }
+        ?>
+    </select><br><br>
+
+<label for="assin_date">assin_date</label>
+    <input type="date" name="assin_date" required><br><br>
+    <label for="deadline">deadline</label>
+    <input type="date" name="deadline" required><br><br>
+
+    <button type="submit">Assign Task</button>
+</form>
+    
+</body>
+>>>>>>> 97ae37d326f91906b26df36d5ac5abd2494e3b0e
 </html>
