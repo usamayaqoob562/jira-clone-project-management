@@ -15,10 +15,10 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{ secrets.VPS_HOST }}       # happy-shirts-tie.loca.lt
+          host: ${{ secrets.VPS_HOST }}
           username: root
-          key: ${{ secrets.SSH_PRIVATE_KEY }} # Humne jo ED25519 ya RSA key lagayi thi
-          port: 80                            # <-- SSH port ki jagah 80 ya 443 karein, kyunki localtunnel traffic HTTP port se aata hai
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22                            # Change from 80 to 22 (standard SSH port)
           script: |
             cd /var/www/html
             git pull origin main
