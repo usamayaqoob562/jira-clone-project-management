@@ -15,7 +15,7 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: '[2400:adc5:175:5600:a00:27ff:fe8f:1f67]'
+          host: ${{ secrets.VPS_HOST_IPV6 }}
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
