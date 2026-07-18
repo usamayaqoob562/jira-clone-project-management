@@ -19,6 +19,10 @@ jobs:
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 443
+          sync: true
+          key_path: ""
+          fingerprint: ""
+          script_stop: true
           script: |
             cd /var/www/html
             git pull origin main
